@@ -61,10 +61,9 @@ def main():
         print("Error: Personal Access Token is required.")
         sys.exit(1)
         
-    collab = input("Enter collaborator's GitHub username to invite (e.g. shekar gudda): ").strip()
+    collab = input("Enter collaborator's GitHub username to invite (default: Shekhar-08): ").strip()
     if not collab:
-        print("Error: Collaborator username is required.")
-        sys.exit(1)
+        collab = "Shekhar-08"
         
     repo_name = "rdkit-studio"
     print("\n[1/4] Creating repository on GitHub...")
