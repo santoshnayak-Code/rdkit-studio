@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.whl
+*.pyc
+.DS_Store
+.system_generated/
+*.log

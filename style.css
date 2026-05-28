@@ -1,0 +1,154 @@
+/* RDKit Studio Custom Glassmorphism Design System */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* Typography & Layout Reset */
+html, body, [data-testid="stAppViewContainer"] {
+    font-family: 'Outfit', sans-serif !important;
+    background-color: #080b11 !important;
+    color: #e2e8f0 !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #080b11;
+}
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #0f172a;
+}
+
+/* Sidebar Custom Styling */
+[data-testid="stSidebar"] {
+    background-color: #0b0f17 !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+[data-testid="stSidebar"] * {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+/* Glassmorphism Cards */
+.chemical-card {
+    background: rgba(15, 23, 42, 0.6) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    border-radius: 16px !important;
+    padding: 24px !important;
+    margin-bottom: 20px !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.chemical-card:hover {
+    transform: translateY(-2px) !important;
+    border-color: rgba(6, 182, 212, 0.3) !important;
+    box-shadow: 0 12px 40px 0 rgba(6, 182, 212, 0.1) !important;
+}
+
+/* Metrics and Values styling */
+.metric-value {
+    font-size: 2.2rem !important;
+    font-weight: 700 !important;
+    background: linear-gradient(135deg, #38bdf8 0%, #06b6d4 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-family: 'Outfit', sans-serif !important;
+}
+.metric-label {
+    font-size: 0.85rem !important;
+    color: #94a3b8 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    margin-bottom: 4px !important;
+}
+
+/* Code and formula styling */
+code, pre, .mono-text {
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 0.9rem !important;
+    background-color: #0b0f17 !important;
+}
+
+/* Gradient Headers */
+h1.gradient-title {
+    background: linear-gradient(135deg, #ffffff 30%, #94a3b8 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em !important;
+}
+
+/* Highlight accent badges */
+.badge-teal {
+    background-color: rgba(6, 182, 212, 0.15) !important;
+    color: #22d3ee !important;
+    border: 1px solid rgba(6, 182, 212, 0.3) !important;
+    padding: 4px 10px !important;
+    border-radius: 9999px !important;
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+    display: inline-block !important;
+}
+
+/* Streamlit component adjustments */
+div[data-testid="stMarkdownContainer"] p {
+    line-height: 1.6 !important;
+    color: #cbd5e1 !important;
+}
+
+/* Custom buttons styling */
+.stButton>button {
+    background: linear-gradient(135deg, #0e1726 0%, #1e293b 100%) !important;
+    color: #e2e8f0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 8px !important;
+    padding: 8px 16px !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease !important;
+}
+.stButton>button:hover {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
+    border-color: #06b6d4 !important;
+    color: #38bdf8 !important;
+    box-shadow: 0 0 12px rgba(6, 182, 212, 0.2) !important;
+}
+
+/* Highlight tables */
+div[data-testid="stTable"] table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    background-color: rgba(15, 23, 42, 0.3) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+}
+div[data-testid="stTable"] th {
+    background-color: #0f172a !important;
+    color: #94a3b8 !important;
+    font-weight: 600 !important;
+    padding: 12px !important;
+    text-align: left !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+div[data-testid="stTable"] td {
+    padding: 12px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+    color: #cbd5e1 !important;
+}
+
+/* Tab buttons active highlight */
+button[data-baseweb="tab"] {
+    font-family: 'Outfit', sans-serif !important;
+    color: #94a3b8 !important;
+    font-weight: 500 !important;
+}
+button[aria-selected="true"] {
+    color: #38bdf8 !important;
+    font-weight: 600 !important;
+}
